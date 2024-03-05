@@ -14,7 +14,6 @@ node{
     stage('Run Docker File'){
             sh 'docker build -t bharathj0/Banking:1.0 .'
         }
-    }
   }
 
     
