@@ -12,8 +12,7 @@ node{
       sh 'mvn clean package'
     }
     stage('Run Docker File'){
-        steps{
-            sh 'docker build -t bankimg .'
+            sh 'docker build -t bharathj0/Banking:1.0 .'
         }
     }
   }
