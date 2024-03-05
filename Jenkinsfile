@@ -1,6 +1,4 @@
-pipeline{
-  agent any
-  stages{
+node{
     stage('Git Chechout'){
       git url: 'https://github.com/bharathj0/star-agile-banking-finance/'
     }
@@ -14,5 +12,5 @@ pipeline{
       sh 'mvn clean package'
     }
   }
-}
+
     
