@@ -11,9 +11,9 @@ node{
     stage('Code Package'){
       sh 'mvn clean package'
     }
-    stage('Run Docker File'){
-            sh 'docker build -t bharathj0/Banking:1.0 .'
-        }
-  }
+    stage('Building Image'){
+        sh 'docker build -t bharathj0/Banking:1.0 .'
+    }
+}
 
     
