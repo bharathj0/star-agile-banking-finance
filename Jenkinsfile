@@ -11,6 +11,11 @@ node{
     stage('Code Package'){
       sh 'mvn clean package'
     }
+    stage('Run Docker File'){
+        steps{
+            sh 'docker build -t bankimg .'
+        }
+    }
   }
 
     
